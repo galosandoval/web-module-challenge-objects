@@ -28,20 +28,21 @@ and should return a number.
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
 const burger = {
-  name: 'Burger',
-  price: 18,
   discount: function(customer){
-    if(customer === 'Teacher' || 'Student'){
-      return (this.price) * 0.75;
-    // }else if(customer === 'public'){
-    //   return (this.price) * 0.9;
-    // }else{
-    //   return this.price;
+    if(customer === 'teacher' || 'student'){
+      return 13.5;
+    }
+  },
+  discount: function(customer){
+    if(customer === 'public'){
+      return 16.2;
+    }
   }
-}
+};
 
-console.log(burger.discount('Teacher'));
+console.log(burger.discount('public'));
 
+console.log()
 ///////////////Reviews (MVP)///////////////////
 
 const reviews = [
@@ -138,9 +139,9 @@ console.log(getLastReview(reviews));
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."}]
 */
 
- function getReviewByRating(/* code here */) {
+//  function getReviewByRating(/* code here */) {
     /* code here */
-  }
+  
 
   
 /** STRETCH 2: Write a function called 'getLongestReview' that returns an array containing all reviews longer than 15 words. 
@@ -156,9 +157,9 @@ and should return an array of objects.
     {name: "Brett", rating: 3, feedback: "great selection of snacks and a nice cafe area to get work done during the day."},
     {name: "Julius", rating: 2, feedback: "I was largely unimpressed by this venue. Nothing special on the menu and too expensive. The atmosphere is polarizing, and not for me, but I think some would like it." }]
 */
-  function getLongReviews(/* code here */) {
+  // function getLongReviews(/* code here */) {
     /* code here */
-  }
+
   
 
 /* STRETCH 3:  This challenge is not related to the data above! 
@@ -179,7 +180,6 @@ The returned object should have the following characteristics:
 */
 
 
-function carMaker(/* code here */) {
+// function carMaker(/* code here */) {
     /* code here */
     
-}
